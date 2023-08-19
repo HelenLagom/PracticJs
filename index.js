@@ -30,13 +30,26 @@
  https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
  70 === 01:10
  */
-function time(time) {
+// function time(time) {
 
-  let hour = String(Math.floor(time / 60)).padStart(2, "0");
-  let minute = String(time - hour * 60).padStart(2, "0");
+//   let hour = String(Math.floor(time / 60)).padStart(2, "0");
+//   let minute = String(time - hour * 60).padStart(2, "0");
 
-  console.log(`${hour} : ${minute}`);
+//   console.log(`${hour} : ${minute}`);
+// }
+// time(85)
+// time(120)
+// // console.log(minute);
+
+/**
+ *? Напишіть цикл, який виводить у консоль
+ *? всі парні числа  від max до min  за спаданням
+ */
+
+const max = 50;
+const min = 23;
+for (let i = max; max >= min; i -= 1) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }
-time(85)
-time(120)
-// console.log(minute);
