@@ -46,10 +46,37 @@
  *? всі парні числа  від max до min  за спаданням
  */
 
-const max = 50;
-const min = 23;
-for (let i = max; max >= min; i -= 1) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-}
+// const max = 50;
+// const min = 23;
+// for (let i = max; i >= min; i-- ) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+
+/**
+ *?  Записать массив, const arr = ['BEST', 'the', 'foo', 'is',  'JS' ]
+ *? развернуть массив,
+ *? вырезать foo,
+ *? перевести его в строку разделенную пробелами
+ перетворити масив у рядок.
+Рещультат має бути JS is the best
+
+масив arr не має змінитися
+ */
+
+// const arr = ["BEST", "the", "foo", "is", "JS"];
+// let newArr = arr.slice();
+// newArr.reverse()
+// const index = newArr.indexOf("foo");
+// newArr.splice(index, 1);
+// const string = newArr.join(" ");
+// console.log(string);
+// console.log(arr);
+
+// arr
+//   .slice(0, arr.indexOf("foo"))
+//   .concat(arr.slice(arr.indexOf("foo") + 1))
+//   .reverse()
+//   .join(" ");
