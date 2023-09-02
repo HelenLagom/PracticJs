@@ -8,16 +8,16 @@
  *? інакше відобразити:"Не знаєте? ECMAScript!"
  */
 
-function askQuestion() {
+// function askQuestion() {
 
-let message = prompt("Яка офіційна назва JavaScript?");
-if (message === "ECMAScript") {
-    alert("Вірно!");
-}
-else {
-    alert("Не знаєте? ECMAScript!");
+// let message = prompt("Яка офіційна назва JavaScript?");
+// if (message === "ECMAScript") {
+//     alert("Вірно!");
+// }
+// else {
+//     alert("Не знаєте? ECMAScript!");
 
-    }
-}
-askQuestion()
+//     }
+// }
+// askQuestion()
 // console.log(message)
