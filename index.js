@@ -130,20 +130,34 @@
  *? з таким ім'ям, ціною та кількістю з об'єкта
  */
 
-const stones = [
-  { name: "Изумруд", price: 1300, quantity: 4 },
-  { name: "Бриллиант", price: 2700, quantity: 6 },
-  { name: "Сапфир", price: 400, quantity: 7 },
-  { name: "Щебень", price: 150, quantity: 100 },
+// const stones = [
+//   { name: "Изумруд", price: 1300, quantity: 4 },
+//   { name: "Бриллиант", price: 2700, quantity: 6 },
+//   { name: "Сапфир", price: 400, quantity: 7 },
+//   { name: "Щебень", price: 150, quantity: 100 },
+// ];
+
+// function calcTotalPrice(someStones, stonesName) {
+//     for (const stone of someStones) {
+//         if (stone.name === stonesName) {
+//             return stone.price * stone.quantity;
+//         }
+//     }
+//     return "Такого каменю не існує";
+// }
+// const result = calcTotalPrice(stones, "Бриллиант");
+// console.log("result:", result)
+
+const tweets = [
+  { id: "000", likes: 5, tags: ["js", "nodejs"] },
+  { id: "001", likes: 2, tags: ["html", "css"] },
+  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+  { id: "003", likes: 8, tags: ["css", "react"] },
+  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 ];
 
-function calcTotalPrice(someStones, stonesName) {
-    for (const stone of someStones) {
-        if (stone.name === stonesName) {
-            return stone.price * stone.quantity;
-        } 
-    }
-    return "Такого каменю не існує";
-}
-const result = calcTotalPrice(stones, "Бриллиант");
-console.log("result:", result)
+const result = tweets.flatMap((item) => item.tags);
+const res = result.filter((item, ind, arr) => {
+  return arr.indexOf(item) === ind;
+});
+console.log(res);
