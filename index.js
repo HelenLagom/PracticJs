@@ -20,4 +20,3 @@
 //     }
 // }
 // askQuestion()
-// console.log(message)
