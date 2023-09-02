@@ -156,8 +156,17 @@ const tweets = [
   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 ];
 
-const result = tweets.flatMap((item) => item.tags);
-const res = result.filter((item, ind, arr) => {
-  return arr.indexOf(item) === ind;
-});
-console.log(res);
+// const result = tweets.flatMap((item) => item.tags);
+// const res = result.filter((item, ind, arr) => {
+//   return arr.indexOf(item) === ind;
+// });
+// console.log(res);
+
+// const tweetsLikes = tweets.filter(tweet => tweet.likes > 5)
+// console.log("tweetsLikes:", tweetsLikes)
+
+// const tweetsTags = tweets.filter(tweet => tweet.tags.includes("js"))
+// console.log("tweetsTags:", tweetsTags)
+
+const tweetsSort = tweets.sort((a, b) => b.likes - a.likes )
+console.log("tweetsSort:", tweetsSort)
